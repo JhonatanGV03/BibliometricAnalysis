@@ -41,14 +41,14 @@ def extraer_sd(playwright, navegador, pagina):
         pagina.wait_for_selector("//textarea[@id='qs']", timeout=60000)
         time.sleep(1)
         pagina.locator("//textarea[@id='qs']").fill('"computational thinking"')
-        pagina.locator("//input[@id='date']").fill('2020-2025')
+        pagina.locator("//input[@id='date']").fill('2020-2026')
         time.sleep(1)
         pagina.locator('//button[@type="submit"]//span//span').click()
         time.sleep(5)
         pagina.wait_for_load_state("domcontentloaded")
 
         # Seleccion de n resultados por pagina
-        safe_click(pagina, '//span[contains(text(), "100")]')
+        safe_click(pagina, 'a[href*="show=100"]')
         pagina.wait_for_load_state("domcontentloaded")
 
         # Descarga de citas en formato bibtex

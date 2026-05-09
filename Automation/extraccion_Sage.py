@@ -28,7 +28,7 @@ def extraer_sage(playwright, navegador, pagina):
         pagina.fill("#AllField35ea26a9-ec16-4bde-9652-17b798d5b6750", '"computational thinking"')
         safe_click(pagina, "button.btn.quick-search__button")
         pagina.wait_for_load_state("domcontentloaded")
-        pagina.goto("https://journals-sagepub-com.crai.referencistas.com/action/doSearch?AllField=%22computational+thinking%22&startPage=0&pageSize=100&AfterYear=2020&BeforeYear=2025")
+        pagina.goto("https://journals-sagepub-com.crai.referencistas.com/action/doSearch?AllField=%22computational+thinking%22&startPage=0&pageSize=100&AfterYear=2020&BeforeYear=2026")
         #safe_click(pagina, "#onetrust-accept-btn-handler")
         #pagina.fill('#range-slider-start', '2020')
         #pagina.locator('#range-slider-start').press('Enter')
