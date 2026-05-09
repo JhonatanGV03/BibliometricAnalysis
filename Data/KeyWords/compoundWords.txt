@@ -1,0 +1,77 @@
+algorithmic thinking
+critical thinking
+logical thinking
+patterns recognition
+problem solving
+control structures
+modular structure
+classical test theory
+confirmatory factor analysis
+exploratory factor analysis
+item response theory
+structural equation model
+beginners computational thinking test
+coding attitudes survey
+collaborative computing observation instrument
+competent computational thinking test
+computational thinking skills test
+computational concepts
+computational thinking assessment for chinese elementary students
+computational thinking challenge
+computational thinking levels scale
+computational thinking scale
+computational thinking skill levels scale
+computational thinking test
+computational thinking test for elementary school students
+computational thinking test for lower primary
+computational thinking-skill tasks on numbers and arithmetic
+computerized adaptive programming concepts test
+ct scale
+elementary student coding attitudes survey
+general self-efficacy scale
+ict competency test
+instrument of computational identity
+kbit fluid intelligence subtest
+mastery of computational concepts test and an algorithmic test
+multidimensional 21st century skills scale
+self-efficacy scale
+stem learning attitude scale
+the computational thinking scale
+longitudinal research
+mixed methods
+upper elementary education
+upper elementary school
+primary school
+primary education
+elementary school
+early childhood education
+secondary school
+secondary education
+high school
+higher education
+block programming
+mobile application
+pair programming
+plugged activities
+unplugged activities
+construct-by-self mind mapping
+construct-on-scaffold mind mapping
+design-based learning
+evidence-centred design approach
+reverse engineering pedagogy
+technology-enhanced learning
+collaborative learning
+cooperative learning
+flipped classroom
+game-based learning
+inquiry-based learning
+personalized learning
+problem-based learning
+project-based learning
+universal design for learning
+blockly games
+robot turtles
+hello ruby
+kibo robots
+bee bot
+agent sheets

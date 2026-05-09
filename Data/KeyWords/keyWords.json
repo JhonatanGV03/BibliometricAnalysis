@@ -1,0 +1,62 @@
+{
+  "habilidades": [
+    "abstraction", "algorithm", "algorithmic_thinking", "coding", "collaboration", "cooperation",
+    "creativity", "critical_thinking", "debug", "decomposition", "evaluation", "generalization",
+    "logic", "logical_thinking", "modularity", "patterns_recognition", "problem_solving", "programming"
+  ],
+  "conceptos computacionales": [
+    "conditionals", "control_structures", "directions", "events", "funtions", "loops",
+    "modular_structure", "parallelism", "sequences", "software", "hardware", "variables"
+  ],
+  "actitudes": [
+    "emotional", "engagement", "motivation", "perceptions", "persistence", "self-efficacy", "self-perceived"
+  ],
+  "propiedades psicometricas": [
+    "classical_test_theory", "ctt", "confirmatory_factory_analysis", "cfa", "exploratory_factor_analysis",
+    "efa", "item_response_theory", "irt", "reliability", "structural_equation_model", "sem", "validity"
+  ],
+  "herramienta de evaluación": [
+    "beginners_computational_thinking_test", "bctt", "coding_attitudes_survey", "escas",
+    "collaborative_computing_observation_instrument", "competent_computational_thinking_test", "cctt",
+    "computational_thinking_skills_test", "ctst", "computational_concepts",
+    "computational_thinking_assessment_for_chinese_elementary_students", "cta", "ces",
+    "computational_thinking_challenge", "ctc", "computational_thinking_levels_scale", "ctls",
+    "computational_thinking_scale", "cts", "computational_thinking_skill_levels_scale",
+    "computational_thinking_test", "ctt", "computational_thinking_test_for_elementary_school_students",
+    "computational_thinking_test_for_lower_primary", "cttlp",
+    "computational_thinking-skill_tasks_on_numbers_and_arithmetic",
+    "computerized_adaptive_programming_concepts_test", "capct", "ct_scale", "cts",
+    "elementary_student_coding_attitudes_survey", "escas", "general_self-efficacy_scale",
+    "ict_competency_test", "instrument_of_computational_identity", "kbit_fluid_intelligence_subtest",
+    "mastery_of_computational_concepts_test_and_an_algorithmic_test",
+    "multidimensional_21st_century_skills_scale", "self-efficacy_scale", "stem_learning_attitude_scale",
+    "the_computational_thinking_scale"
+  ],
+  "diseño de investigación": [
+    "no_experimental", "experimental", "longitudinal_research", "mixed_methods", "post-test",
+    "pre-test", "quasi-experiments"
+  ],
+  "nivel de escolaridad": [
+    "upper_elementary_education","upper_elementary_school",
+    "primary_school","primary_education","elementary_school",
+    "early_childhood_education","kindergarten","preschool",
+    "secondary_school","secondary_education", "high_school","higher_education",
+    "university","college"
+  ],
+  "medio": [
+    "block_programming", "mobile_application", "pair_programming", "plugged_activities", "programming",
+    "robotics", "spreadsheet", "stem", "unplugged_activities"
+  ],
+  "estrategia": [
+    "construct-by-self_mind_mapping", "construct-on-scaffold_mind_mapping", "design-based_learning",
+    "evidence-centred_design_approach", "gamification", "reverse_engineering_pedagogy",
+    "technology-enhanced_learning", "collaborative_learning", "cooperative_learning",
+    "flipped_classroom", "game-based_learning", "inquiry-based_learning", "personalized_learning",
+    "problem-based_learning", "project-based_learning", "universal_design_for_learning"
+  ],
+  "herramienta": [
+    "alice", "arduino", "scratch", "scratchjr", "blockly_games", "code.org", "codecombat",
+    "csunplugged", "robot_turtles", "hello_ruby", "kodable", "lightbotjr", "kibo_robots",
+    "bee_bot", "cubetto", "minecraft", "agent sheets", "mimo", "py–learn", "spacechem"
+  ]
+}

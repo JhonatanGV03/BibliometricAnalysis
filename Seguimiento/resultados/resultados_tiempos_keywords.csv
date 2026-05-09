@@ -1,0 +1,9 @@
+Columna,Método,Tamaño,Tiempo (s)
+keywords,timSort,2061,0.01329886000003171
+keywords,combSort,2061,0.010560249999980443
+keywords,selectionSort,2061,0.2439021700000012
+keywords,quickSort,2061,0.0076322100000652425
+keywords,heapSort,2061,0.011200780000035594
+keywords,bitonicSort,2061,0.03548729999993157
+keywords,gnomeSort,2061,0.07433532000004561
+keywords,binaryInsertionSort,2061,0.05911099999993894

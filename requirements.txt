@@ -1,0 +1,8 @@
+streamlit
+pandas
+bibtexparser
+playwright
+matplotlib
+numpy
+scipy
+tabulate

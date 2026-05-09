@@ -1,0 +1,9 @@
+Columna,Método,Tamaño,Tiempo (s)
+journal,timSort,1135,0.0023294800000257963
+journal,combSort,1135,5.539000003409456e-05
+journal,selectionSort,1135,0.10732375000006869
+journal,quickSort,1135,0.003316140000060841
+journal,heapSort,1135,0.008533189999980095
+journal,bitonicSort,1135,0.018050510000011854
+journal,gnomeSort,1135,0.0012272899999516084
+journal,binaryInsertionSort,1135,0.02000436999996964

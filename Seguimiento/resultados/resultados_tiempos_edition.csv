@@ -1,0 +1,9 @@
+Columna,Método,Tamaño,Tiempo (s)
+edition,timSort,65,0.0003234399999200832
+edition,combSort,65,9.369999952468789e-06
+edition,selectionSort,65,0.000289729999985866
+edition,quickSort,65,3.255999999964843e-05
+edition,heapSort,65,0.00016665000002831222
+edition,bitonicSort,65,0.0003500300000268908
+edition,gnomeSort,65,2.3090000013326062e-05
+edition,binaryInsertionSort,65,0.00018430000000080327
