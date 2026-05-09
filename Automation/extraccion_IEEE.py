@@ -14,6 +14,10 @@ def safe_click(pagina, selector):
 
 
 def extraer_ieee (playwright, navegador, pagina):
+    #Ruta de descarga
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    download_dir = os.path.join(BASE_DIR, "Data", "DownloadedCitations")
+
     # Crear una nueva pestaña en el navegador
     contexto = pagina.context
     pagina = contexto.new_page()
@@ -83,7 +87,8 @@ def extraer_ieee (playwright, navegador, pagina):
                             boton_descarga.click()
 
                         download = download_info.value
-                        download_path = os.path.join(os.getcwd(), "Data\DownloadedCitations", f"IEEE_{i}.bib")
+
+                        download_path = os.path.join(download_dir, f"IEEE_{i}.bib")
                         download.save_as(download_path)
                         print(f"Archivo descargado en: {download_path}")
                         descarga_exitosa = True

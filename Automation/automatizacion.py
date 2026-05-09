@@ -2,6 +2,7 @@ import os
 import shutil
 from playwright.sync_api import sync_playwright
 import time
+from Automation.arreglar_ieee import procesar_archivos_ieee
 import Automation.extraccion_Sage as RS
 from dotenv import load_dotenv
 import Automation.extraccion_IEEE as RSIEEE
@@ -53,9 +54,11 @@ def iniciar_sesion(pagina):
 
 
 def descargar_citas():
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    download_dir = os.path.join(BASE_DIR, "Data", "DownloadedCitations")
 
     # Eliminar archivos de la carpeta Datos
-    eliminar_archivos(os.path.join(os.getcwd(), "Data\DownloadedCitations"))
+    eliminar_archivos(download_dir)
 
     # Inicialización del navegador
     playwright, navegador, pagina = initialize_browser()
@@ -65,7 +68,10 @@ def descargar_citas():
     RSIEEE.extraer_ieee(playwright, navegador, pagina)
     RSSD.extraer_sd(playwright, navegador, pagina)
 
+    procesar_archivos_ieee()
+
 
 if __name__ == "__main__":
+
     # Descargar citas
     descargar_citas()

@@ -11,7 +11,8 @@ def arreglar_IEEE(entrada):
 
 
 def procesar_archivos_ieee():
-    carpeta_datos = os.path.join(os.getcwd(), "Data/DownloadedCitations")  # Ruta absoluta a 'Datos'
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    carpeta_datos = os.path.join(BASE_DIR, "Data", "DownloadedCitations")
 
     # Verificar si la carpeta 'Datos' existe
     if not os.path.exists(carpeta_datos):

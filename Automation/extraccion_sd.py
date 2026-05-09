@@ -13,6 +13,9 @@ def safe_click(pagina, selector):
 
 
 def extraer_sd(playwright, navegador, pagina):
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    download_dir = os.path.join(BASE_DIR, "Data", "DownloadedCitations")
+
     # Crear una nueva pestaña en el navegador
     contexto = pagina.context
     pagina = contexto.new_page()
@@ -66,7 +69,7 @@ def extraer_sd(playwright, navegador, pagina):
                 with pagina.expect_download() as download_info:
                     pagina.wait_for_selector('//span[contains(text(), "Export citation to BibTeX")]', timeout=10000).click()
                 download = download_info.value
-                download_path = os.path.join(os.getcwd(), "Data/DownloadedCitations", f"ScienceDirect_{i}.bib")
+                download_path = os.path.join(download_dir, f"ScienceDirect_{i}.bib")
                 download.save_as(download_path)
                 print(f"Archivo descargado en: {download_path}")
                 time.sleep(1)
