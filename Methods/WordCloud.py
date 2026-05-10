@@ -65,7 +65,7 @@ wc = WordCloud(
     background_color='white',  # Fondo azul
     mask=mask,  # Aplicar forma de nube
     contour_width=5,
-    contour_color='ligthgray',
+    contour_color='lightgray',
     max_words=50,  # Limitar a las 50 palabras más frecuentes
     colormap = "tab10",
     prefer_horizontal = 0.9,
@@ -78,7 +78,7 @@ wc = WordCloud(
 wc.generate_from_frequencies(palabras_destacadas)
 
 # Guardar la imagen generada
-ruta_salida = "../Graphics/WordCloud/general_wordcloud_destacadas.png"
+ruta_salida = os.path.join(carpeta_salida, "general_wordcloud_destacadas.png")
 
 # Convertir la imagen de la nube de palabras a un array de numpy
 imagen_wc = wc.to_array()
@@ -89,7 +89,7 @@ plt.imshow(imagen_wc, interpolation='bilinear')
 plt.axis("off")
 
 # Título de la nube de palabras
-plt.title(0.05, 0.05, "Palabras Clave", color='black', fontsize=20, pad = 20, transform=plt.gca().transAxes)
+plt.title("Palabras Clave", color='black', fontsize=20, pad = 20)
 
 # Guardar la imagen con el título
 plt.savefig(ruta_salida, format="png", bbox_inches="tight", pad_inches=0.0)

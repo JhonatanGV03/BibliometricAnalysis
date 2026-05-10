@@ -2,39 +2,39 @@ Categoría: habilidades
 ╒══════════════════════╤══════════════╕
 │ Palabra Clave        │   Frecuencia │
 ╞══════════════════════╪══════════════╡
-│ programming          │         1314 │
+│ programming          │         1681 │
 ├──────────────────────┼──────────────┤
-│ coding               │          295 │
+│ coding               │          431 │
 ├──────────────────────┼──────────────┤
-│ evaluation           │          223 │
+│ evaluation           │          302 │
 ├──────────────────────┼──────────────┤
-│ creativity           │          169 │
+│ creativity           │          248 │
 ├──────────────────────┼──────────────┤
-│ algorithm            │          100 │
+│ collaboration        │          179 │
 ├──────────────────────┼──────────────┤
-│ collaboration        │           97 │
+│ critical_thinking    │          156 │
 ├──────────────────────┼──────────────┤
-│ problem_solving      │           96 │
+│ algorithm            │          132 │
 ├──────────────────────┼──────────────┤
-│ critical_thinking    │           92 │
+│ abstraction          │          119 │
 ├──────────────────────┼──────────────┤
-│ abstraction          │           86 │
+│ problem_solving      │          110 │
 ├──────────────────────┼──────────────┤
-│ logic                │           54 │
+│ algorithmic_thinking │           92 │
 ├──────────────────────┼──────────────┤
-│ algorithmic_thinking │           53 │
+│ logic                │           81 │
 ├──────────────────────┼──────────────┤
-│ decomposition        │           45 │
+│ decomposition        │           69 │
 ├──────────────────────┼──────────────┤
-│ generalization       │           15 │
+│ cooperation          │           22 │
 ├──────────────────────┼──────────────┤
-│ cooperation          │           14 │
+│ generalization       │           17 │
 ├──────────────────────┼──────────────┤
-│ logical_thinking     │           12 │
+│ logical_thinking     │           17 │
 ├──────────────────────┼──────────────┤
-│ debug                │            4 │
+│ debug                │            7 │
 ├──────────────────────┼──────────────┤
-│ modularity           │            3 │
+│ modularity           │            6 │
 ├──────────────────────┼──────────────┤
 │ patterns_recognition │            0 │
 ╘══════════════════════╧══════════════╛

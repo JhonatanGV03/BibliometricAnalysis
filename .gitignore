@@ -1,0 +1,14 @@
+.vscode/settings.json
+Automation/__pycache__/arreglar_ieee.cpython-314.pyc
+Automation/__pycache__/automatizacion.cpython-314.pyc
+Automation/__pycache__/extraccion_IEEE.cpython-314.pyc
+Automation/__pycache__/extraccion_Sage.cpython-314.pyc
+Automation/__pycache__/extraccion_sd.cpython-314.pyc
+Methods/__pycache__/agrupacion.cpython-314.pyc
+Methods/__pycache__/Coincidences.cpython-314.pyc
+Methods/__pycache__/unificarArchivos.cpython-314.pyc
+Methods/Clustering/__pycache__/clustering.cpython-314.pyc
+Methods/Clustering/__pycache__/dendograms.cpython-314.pyc
+Methods/TextSimilarity/__pycache__/abstract_handler.cpython-314.pyc
+Methods/TextSimilarity/__pycache__/bert.cpython-314.pyc
+Methods/TextSimilarity/__pycache__/tf_idf.cpython-314.pyc

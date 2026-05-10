@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics import silhouette_score
 from scipy.cluster.hierarchy import linkage, fcluster
+from scipy.spatial.distance import pdist
 from sklearn.preprocessing import normalize
 
 
@@ -16,11 +17,11 @@ def apply_clustering(vectors, method = 'average', metric = 'cosine', n_clusters=
     vectors = normalize(vectors)
 
     distances = pdist(
-         vectors,
-         metric = metric
+        vectors,
+        metric=metric
     )
 
-    z = linkage(
+    Z = linkage(
         distances,
         method = method
     )

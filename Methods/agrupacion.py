@@ -1,6 +1,9 @@
 import csv
 import os
 import re
+import matplotlib.pyplot as plt
+import matplotlib.cm as cm
+import numpy as np
 from collections import Counter
 
 from matplotlib import pyplot as plt
@@ -151,6 +154,7 @@ def graficarCounter(counter, titulo, cantidad = 15):
         width = bar.get_width()
 
         plt.text(
+            width + 0.3,
             bar.get_y() + bar.get_height()/2,
             f"{width}",
             va = 'center',
