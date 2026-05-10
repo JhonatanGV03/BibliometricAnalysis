@@ -4,6 +4,7 @@ import numpy as np
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import os
+from matplotlib import colormaps
 
 # Obtener la ruta absoluta del directorio donde se encuentra el script actual
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -57,19 +58,23 @@ for archivo in os.listdir(carpeta_tablas):
 # Por ejemplo, seleccionamos las 50 más frecuentes
 palabras_destacadas = dict(sorted(datos_totales.items(), key=lambda item: item[1], reverse=True)[:50])
 
-# Función para que las palabras sean blancas
-def white_color_func(word, font_size, position, orientation, random_state=None, **kwargs):
-    return "white"
-
 # Crear la nube de palabras con las frecuencias de las palabras destacadas
 wc = WordCloud(
-    background_color='deepskyblue',  # Fondo azul
+    width = 1920,
+    height = 1080,
+    background_color='white',  # Fondo azul
     mask=mask,  # Aplicar forma de nube
     contour_width=5,
-    contour_color='white',
+    contour_color='ligthgray',
     max_words=50,  # Limitar a las 50 palabras más frecuentes
-    color_func=white_color_func  # Aplicar el color blanco a las palabras
+    colormap = "tab10",
+    prefer_horizontal = 0.9,
+    random_state = 42,
+    collocations = False,
+    min_font_size = 10,
+    max_font_size = 180
 )
+
 wc.generate_from_frequencies(palabras_destacadas)
 
 # Guardar la imagen generada
@@ -84,7 +89,7 @@ plt.imshow(imagen_wc, interpolation='bilinear')
 plt.axis("off")
 
 # Título de la nube de palabras
-plt.text(0.05, 0.05, "Palabras Clave", color='blue', fontsize=20, ha='left', va='bottom', transform=plt.gca().transAxes)
+plt.title(0.05, 0.05, "Palabras Clave", color='black', fontsize=20, pad = 20, transform=plt.gca().transAxes)
 
 # Guardar la imagen con el título
 plt.savefig(ruta_salida, format="png", bbox_inches="tight", pad_inches=0.0)

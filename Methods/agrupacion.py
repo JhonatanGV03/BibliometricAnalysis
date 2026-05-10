@@ -125,12 +125,38 @@ def graficarCounter(counter, titulo, cantidad = 15):
     etiquetas = [x[0] for x in items]
     valores = [x[1] for x in items]
 
+    # Generamos colores usando un colormap
+    colors = cm.Blues(
+        np.linspace(0.4, 1, len(valores))
+    )
+
     plt.figure(figsize=(10, 6))
-    plt.barh(etiquetas, valores, color='skyblue')
-    plt.xlabel("Frequency")
-    plt.title(f"Most Frequent {titulo.capitalize()}")
+
+    bars = plt.barh(
+        etiquetas,
+        valores,
+        color = colors
+    )
+
+    plt.xlabel("Frequency", fontsize = 12)
+    plt.title(f"Most Frequent {titulo.capitalize()}", fontsize = 16, fontweight = "bold")
     plt.gca().invert_yaxis()
-    plt.grid(axis="x", linestyle="--", alpha=0.7)
+    plt.grid(axis="x", linestyle="--", alpha=0.4)
+    ax = plt.gca()
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+
+    # Valores en las barras
+    for bar in bars:
+        width = bar.get_width()
+
+        plt.text(
+            bar.get_y() + bar.get_height()/2,
+            f"{width}",
+            va = 'center',
+            fontsize = 10
+        )
+        
     plt.tight_layout()
     plt.savefig(nombreArchivoPNG)
     print(f"📊 Gráfico guardado como: {nombreArchivoPNG}")
